@@ -1,12 +1,14 @@
 # Ignore Python virtual environment
 venv/
+../venv/
 
 # Ignore SQLite database
 db.sqlite3
 
 # Ignore compiled Python files
 __pycache__/
+api/__pycache__/
 
 # Ignore environment variables
 .env
-api/__pycache__/
+
