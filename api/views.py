@@ -20,7 +20,6 @@ class ProductListCreateAPIView(generics.ListCreateAPIView):
     def get_permissions(self):
         self.permission_classes = [AllowAny]
         if self.request.method == 'POST':
-            print('called')
             self.permission_classes = [IsAdminUser]
         return super().get_permissions()
 
